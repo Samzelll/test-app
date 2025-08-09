@@ -1,0 +1,17 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_102_23556" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+<rect y="3.42856" width="24" height="17.1429" fill="white"/>
+</mask>
+<g mask="url(#mask0_102_23556)">
+<rect y="3.42871" width="24" height="17.1429" rx="4" fill="white"/>
+<rect y="3.42856" width="24" height="17.1429" fill="#0A17A7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.8571H9.14286V21.7143H14.8571V14.8571H24V9.14285H14.8571V2.28571H9.14286V9.14285H0V14.8571Z" fill="white"/>
+<rect x="-1.09924" y="1.78589" width="33.1429" height="2.28571" transform="rotate(34 -1.09924 1.78589)" fill="white"/>
+<rect x="-2.37744" y="20.3192" width="33.1429" height="2.28571" transform="rotate(-34 -2.37744 20.3192)" fill="white"/>
+<path d="M16.0011 8.85617L26.8571 1.71429" stroke="#DB1F35" stroke-width="1.33333" stroke-linecap="round"/>
+<path d="M17.1538 15.1693L26.8857 21.7289" stroke="#DB1F35" stroke-width="1.33333" stroke-linecap="round"/>
+<path d="M6.86185 8.83755L-3.28931 1.99631" stroke="#DB1F35" stroke-width="1.33333" stroke-linecap="round"/>
+<path d="M7.96286 15.0899L-3.28931 22.5518" stroke="#DB1F35" stroke-width="1.33333" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.7143H10.2857V20.5714H13.7143V13.7143H24V10.2857H13.7143V3.42856H10.2857V10.2857H0V13.7143Z" fill="#E6273E"/>
+</g>
+</svg>
