@@ -1,22 +1,53 @@
-<div class="relative w-full md:w-60 p-[2px] rounded-none" style="
-    background: linear-gradient(
-      135deg,
-      #FF8C00 0%,
-      #FFA500 25%,
-      #FFD700 50%,
-      #FFFF00 75%,
-      #FF4500 100%
-    );
-    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7),
-                0 0 20px rgba(255, 215, 0, 0.5);
-">
-  <nav class="bg-[#3D2D52] text-white w-full h-full rounded-[10%] flex md:flex-col overflow-x-auto md:overflow-y-auto">
-    <ul class="flex md:flex-col w-full divide-y divide-yellow-400/20">
-      <li *ngFor="let item of menuItems"
-          class="px-4 py-3 cursor-pointer hover:bg-[#312442] transition-colors"
-          [routerLink]="item.link"
-          routerLinkActive="bg-[#312442]">
-        <a class="block hover:text-[#aaaa]" [routerLink]="item.link" routerLinkActive="text-[#7E93A8] font-semibold">
+<div class="relative w-full md:w-60  ">
+  <!-- SVG в углах -->
+  <svg class="absolute top-0 left-0 w-5 h-7 z-20" viewBox="0 0 18 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0H17.3333L5.09804 5.38401L0 26.6667V0Z" fill="url(#paint0_linear_102_13486)"/>
+    <defs>
+      <linearGradient id="paint0_linear_102_13486" x1="8.66667" y1="-1.95122" x2="8.66667" y2="27.9675" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F4E02B"/>
+        <stop offset="1" stop-color="#F48F6B"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <svg class="absolute top-0 right-0 w-6 h-6 z-20" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M23 0H0.333334L18.0109 5.04935L23 24V0Z" fill="url(#paint0_linear_102_13487)"/>
+    <defs>
+      <linearGradient id="paint0_linear_102_13487" x1="11.6667" y1="-1.7561" x2="11.6667" y2="25.1707" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F4E02B"/>
+        <stop offset="1" stop-color="#F48F6B"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <svg class="absolute bottom-0 left-0 w-7 h-5 z-20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 20H31.3333L5.03571 13.5185L0 0V20Z" fill="url(#paint0_linear_102_13484)"/>
+    <defs>
+      <linearGradient id="paint0_linear_102_13484" x1="25.1164" y1="20.4167" x2="25.1164" y2="-2.5" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#E84A11"/>
+        <stop offset="1" stop-color="#F4E02B"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <svg class="absolute bottom-0 right-0 w-5 h-5 z-20" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 18H0.666666L15.4352 12.9527L20 0.666666V18Z" fill="url(#paint0_linear_102_13485)"/>
+    <defs>
+      <linearGradient id="paint0_linear_102_13485" x1="4.50266" y1="18.3611" x2="4.50266" y2="-1.5" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#E84A11"/>
+        <stop offset="1" stop-color="#F4E02B"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Навигация -->
+  <nav class="bg-[#3D2D52] text-white w-full h-full flex md:flex-col overflow-x-auto md:overflow-y-auto relative z-0 border-1 border-[#7B748F]">
+    <ul class="flex md:flex-col w-full divide-y divide-[#7B748F] divide-y-[1px]">
+      <li *ngFor="let item of menuItems" class="px-3 py-3 cursor-pointer last:divide-none border-[#7B748F]">
+        <a class="block hover:text-[#aaaa] font-normal"
+           [ngClass]="{'text-[#3D2D52]': item.label === 'Terms and Conditions', 'text-transparent': item.label === 'Pronounce', 'text-current': item.label !== 'Terms and Conditions' && item.label !== 'Pronounce'}"
+           [routerLink]="item.link"
+           routerLinkActive="text-[#7E93A8] font-semibold">
           {{ item.label }}
         </a>
       </li>

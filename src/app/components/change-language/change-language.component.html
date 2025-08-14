@@ -2,29 +2,33 @@
   <div class="flex items-center gap-4">
     <span class="text-white font-medium">Select Language</span>
 
-    <div
-      class="relative p-[2px] rounded-none"
-      style="
-        background: linear-gradient(
-          135deg,
-          #ff8c00 0%,
-          #ffa500 25%,
-          #ffd700 50%,
-          #ffff00 75%,
-          #ff4500 100%
-        );
-        box-shadow: 0 0 10px rgba(255, 165, 0, 0.7),
-          0 0 20px rgba(255, 215, 0, 0.5);
-      "
-    >
-      <div
-        class="relative rounded-xl overflow-hidden"
-        style="background-color: #3d2d52"
-      >
-        <div class="flex items-center px-4 py-2">
-          <img src="/eng.svg" alt="English" class="w-6 h-6" />
-          <span class="text-white ml-2">English</span>
-        </div>
+    <div class="relative overflow-hidden border-2 border-[#F4E02B]" style="background-color: #3d2d52">
+      <!-- SVG Corners -->
+      <!-- Top Left -->
+      <svg class="absolute top-0 left-0 w-6  z-10" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H25L6.70732 6.12903L0 19V0Z" fill="#F4E02B"/>
+      </svg>
+
+      <!-- Top Right -->
+      <svg class="absolute top-0 right-0 w-8  z-10" viewBox="0 0 35 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M35 0H0L27.8814 4.85714L35 17V0Z" fill="#F4E02B"/>
+        <path d="M24.322 8.5H8.8983L21.9492 12.1429L27.8814 17L24.322 8.5Z" fill="#F4E02B"/>
+      </svg>
+
+      <!-- Bottom Left -->
+      <svg class="absolute bottom-0 left-0 w-7 h-4 z-10" viewBox="0 0 31 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 17H27.9608L6.68627 11.5357L0 0V17Z" fill="#F4E02B"/>
+        <path d="M9.72549 8.5L7.90196 0L13.3725 4.85714L31 9.71429L9.72549 8.5Z" fill="#F4E02B"/>
+      </svg>
+
+      <!-- Bottom Right -->
+      <svg class="absolute bottom-0 right-0 w-4 h-3 z-10" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M27 19H-1.90735e-06L20.4 13.0625L27 0V19Z" fill="#F4E02B"/>
+      </svg>
+
+      <div class="flex items-center px-4 py-2 relative z-0">
+        <img src="/eng.svg" alt="English" class="w-6 h-6" />
+        <span class="text-white ml-2">English</span>
       </div>
     </div>
   </div>

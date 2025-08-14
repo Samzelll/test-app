@@ -1,24 +1,115 @@
 <section class="space-y-4">
   <h1 class="text-3xl font-bold text-white">Terms and Conditions</h1>
 
-  <div
-    class="relative p-[2px] rounded-none"
-    style="
-      background: linear-gradient(
-        135deg,
-        #ff8c00 0%,
-        #ffa500 25%,
-        #ffd700 50%,
-        #ffff00 75%,
-        #ff4500 100%
-      );
-      box-shadow: 0 0 10px rgba(255, 165, 0, 0.7),
-        0 0 20px rgba(255, 215, 0, 0.5);
-    "
-  >
+<div class="relative w-full rounded-none border-2 border-[#F48F6B]"
+     style="box-shadow: 0 6px 6px -3px #FF8C00,
+        0 6px 6px -3px #FF4500,
+        0 6px 6px -3px #FFD700;">
+    <!-- Orange/neon-orange SVG corners at 40% opacity -->
+    <svg
+      class="absolute top-0 left-0 w-5 h-7 z-20 opacity-40"
+      viewBox="0 0 18 27"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0H17.3333L5.09804 5.38401L0 26.6667V0Z"
+        fill="url(#paint0_linear_banner_1)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_banner_1"
+          x1="8.66667"
+          y1="-1.95122"
+          x2="8.66667"
+          y2="27.9675"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#F48F6B" />
+          <stop offset="1" stop-color="#F48F6B" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg
+      class="absolute top-0 right-0 w-6 h-6 z-20 opacity-40"
+      viewBox="0 0 23 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M23 0H0.333334L18.0109 5.04935L23 24V0Z"
+        fill="url(#paint0_linear_banner_2)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_banner_2"
+          x1="11.6667"
+          y1="-1.7561"
+          x2="11.6667"
+          y2="25.1707"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#F48F6B" />
+          <stop offset="1" stop-color="#FF8C00" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg
+      class="absolute bottom-0 left-0 w-7 h-5 z-20 opacity-40"
+      viewBox="0 0 32 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 20H31.3333L5.03571 13.5185L0 0V20Z"
+        fill="url(#paint0_linear_banner_3)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_banner_3"
+          x1="25.1164"
+          y1="20.4167"
+          x2="25.1164"
+          y2="-2.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#F48F6B" />
+          <stop offset="1" stop-color="#FFD700" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg
+      class="absolute bottom-0 right-0 w-5 h-5 z-20 opacity-40"
+      viewBox="0 0 20 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20 18H0.666666L15.4352 12.9527L20 0.666666V18Z"
+        fill="url(#paint0_linear_banner_4)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_banner_4"
+          x1="4.50266"
+          y1="18.3611"
+          x2="4.50266"
+          y2="-1.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#F48F6B" />
+          <stop offset="1" stop-color="#FFD700" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <!-- Banner content -->
     <div
       *ngIf="showBanner"
-      class="relative rounded-xl overflow-hidden"
+      class="relative rounded-none overflow-hidden"
       style="background-color: #3d2d52"
     >
       <button
@@ -66,7 +157,7 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
 
   <div *ngFor="let section of sections" class="space-y-4">
     <h2 class="text-xl font-semibold" style="color: #7e93a8">
